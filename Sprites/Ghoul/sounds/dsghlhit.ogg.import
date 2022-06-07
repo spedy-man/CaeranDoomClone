@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/dsghlhit.ogg-fde9cccadbc2b52941125ade847f88fd.oggstr"
+
+[deps]
+
+source_file="res://Sprites/Ghoul/sounds/dsghlhit.ogg"
+dest_files=[ "res://.import/dsghlhit.ogg-fde9cccadbc2b52941125ade847f88fd.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,70 @@
+[gd_scene load_steps=19 format=2]
+
+[ext_resource path="res://Sprites/Ghoul/SPRITES/ghule1r1.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/Ghoul/SPRITES/ghuln0.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Ghoul/SPRITES/ghulm0.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Ghoul/SPRITES/ghulo0.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Ghoul/SPRITES/ghulp0.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Ghoul/SPRITES/ghuli0.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/Ghoul/SPRITES/ghula1c1.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/Ghoul/SPRITES/ghulh1.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/Ghoul/SPRITES/ghulb1d1.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/Ghoul/SPRITES/ghulk0.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/Ghoul/SPRITES/ghulq1.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/Ghoul/SPRITES/ghulj0.png" type="Texture" id=12]
+[ext_resource path="res://Sprites/Ghoul/SPRITES/ghulg1t1.png" type="Texture" id=13]
+[ext_resource path="res://Sprites/Ghoul/SPRITES/ghull0.png" type="Texture" id=14]
+[ext_resource path="res://Sprites/Ghoul/SPRITES/ghulf1s1.png" type="Texture" id=15]
+[ext_resource path="res://Scenes/EnemyBasicGhoul.gd" type="Script" id=16]
+
+[sub_resource type="CapsuleShape" id=1]
+radius = 0.5
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 11 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "walking",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 8 ), ExtResource( 8 ) ],
+"loop": true,
+"name": "hit",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ), ExtResource( 15 ), ExtResource( 13 ) ],
+"loop": true,
+"name": "attack",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 12 ), ExtResource( 10 ), ExtResource( 14 ), ExtResource( 3 ), ExtResource( 2 ), ExtResource( 4 ), ExtResource( 5 ) ],
+"loop": false,
+"name": "die",
+"speed": 5.0
+} ]
+
+[node name="EnemyBasicGhoul" type="KinematicBody" groups=["Enemy"]]
+script = ExtResource( 16 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0 )
+shape = SubResource( 1 )
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+transform = Transform( 3.5, 0, 0, 0, 3.5, 0, 0, 0, 3.5, -0.134225, -0.943482, 0 )
+centered = false
+offset = Vector2( -20.7, 0 )
+billboard = 2
+frames = SubResource( 2 )
+animation = "walking"
+frame = 1
+playing = true
+
+[node name="RayCast" type="RayCast" parent="."]
+
+[node name="Timer" type="Timer" parent="."]

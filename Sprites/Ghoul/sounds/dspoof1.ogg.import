@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/dspoof1.ogg-3e732daf86b7b1ac2e9aaee5b9b654f8.oggstr"
+
+[deps]
+
+source_file="res://Sprites/Ghoul/sounds/dspoof1.ogg"
+dest_files=[ "res://.import/dspoof1.ogg-3e732daf86b7b1ac2e9aaee5b9b654f8.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

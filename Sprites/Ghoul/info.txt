@@ -1,0 +1,10 @@
+Name: Ghoul
+Difficulty: Medium
+Connection: None
+Summon: Ghoul
+Melee: Yes
+Distance: Projectile
+Type: Human, Undead
+Brightmaps: No
+Actor modification: No
+ACS: No

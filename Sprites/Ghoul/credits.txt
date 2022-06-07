@@ -1,0 +1,6 @@
+Code: Eriance, Ghastly Dragon (ZScript conversion)
+GLDefs: Ghastly Dragon
+Sounds: Raven Software
+Sprites: Raven Software
+Sprite Edit: Eriance
+Idea Base: Hellstorm Ghoul

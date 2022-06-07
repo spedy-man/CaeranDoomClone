@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/dsbloodx.ogg-4a68b264a6b1251b938be2a0a29de95c.oggstr"
+
+[deps]
+
+source_file="res://Sprites/Ghoul/sounds/dsbloodx.ogg"
+dest_files=[ "res://.import/dsbloodx.ogg-4a68b264a6b1251b938be2a0a29de95c.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
