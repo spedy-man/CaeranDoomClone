@@ -41,3 +41,5 @@ func death():
 	
 func shoot(target):
 	pass
+
+

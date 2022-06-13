@@ -32,9 +32,9 @@ animations = [ {
 "name": "walking",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 8 ), ExtResource( 8 ) ],
-"loop": true,
-"name": "hit",
+"frames": [ ExtResource( 6 ), ExtResource( 12 ), ExtResource( 10 ), ExtResource( 14 ), ExtResource( 3 ), ExtResource( 2 ), ExtResource( 4 ), ExtResource( 5 ) ],
+"loop": false,
+"name": "die",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 1 ), ExtResource( 15 ), ExtResource( 13 ) ],
@@ -42,9 +42,9 @@ animations = [ {
 "name": "attack",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 6 ), ExtResource( 12 ), ExtResource( 10 ), ExtResource( 14 ), ExtResource( 3 ), ExtResource( 2 ), ExtResource( 4 ), ExtResource( 5 ) ],
-"loop": false,
-"name": "die",
+"frames": [ ExtResource( 8 ), ExtResource( 8 ) ],
+"loop": true,
+"name": "hit",
 "speed": 5.0
 } ]
 
@@ -62,7 +62,6 @@ offset = Vector2( -20.7, 0 )
 billboard = 2
 frames = SubResource( 2 )
 animation = "walking"
-frame = 1
 playing = true
 
 [node name="RayCast" type="RayCast" parent="."]

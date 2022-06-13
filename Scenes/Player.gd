@@ -46,3 +46,4 @@ func change_gun():
 func _process(delta):
 	pass
 
+

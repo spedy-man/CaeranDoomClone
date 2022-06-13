@@ -2,7 +2,7 @@ extends Spatial
 
 onready var gun_sprite = $CanvasLayer/Control/GunSprite
 onready var gun_rays = $GunRays.get_children()
-onready var flash = preload("res://Flash.tscn")
+onready var flash = preload("res://Scenes/Flash.tscn")
 
 var can_shoot = true
 var damage = 8
@@ -31,3 +31,5 @@ func _process(delta):
 		
 		can_shoot = true
 		gun_sprite.play("idle")
+
+
