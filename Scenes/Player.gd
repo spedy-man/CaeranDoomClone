@@ -44,6 +44,6 @@ func change_gun():
 	pass
 
 func _process(delta):
-	pass
+	if input.is_action_just_pressed("next_gun")
 
 

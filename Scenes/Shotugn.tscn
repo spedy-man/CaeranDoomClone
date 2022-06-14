@@ -1,22 +1,22 @@
 [gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://Sprites/FireBlast/confb0.png" type="Texture" id=1]
-[ext_resource path="res://Sprites/FireBlast/confc0.png" type="Texture" id=2]
-[ext_resource path="res://Sprites/FireBlast/conff0.png" type="Texture" id=3]
-[ext_resource path="res://Sprites/FireBlast/confg0.png" type="Texture" id=4]
-[ext_resource path="res://Sprites/FireBlast/confh0.png" type="Texture" id=5]
-[ext_resource path="res://Sprites/FireBlast/confa0.png" type="Texture" id=6]
-[ext_resource path="res://Sprites/FireBlast/confe0.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/Shotgun/fir1n0.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/Shotgun/fir1h0.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Shotgun/fir1j0.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Shotgun/fir1k0.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Shotgun/fir1l0.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Shotgun/fir1m0.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/Shotgun/fir1i0.png" type="Texture" id=7]
 [ext_resource path="res://Scenes/Gun.gd" type="Script" id=8]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 6 ), ExtResource( 1 ), ExtResource( 2 ) ],
+"frames": [ ExtResource( 2 ), ExtResource( 7 ), ExtResource( 3 ), ExtResource( 7 ) ],
 "loop": true,
 "name": "idle",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 7 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ],
+"frames": [ ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 1 ) ],
 "loop": true,
 "name": "shoot",
 "speed": 12.0
@@ -36,11 +36,11 @@ margin_left = -40.0
 margin_top = -40.0
 
 [node name="GunSprite" type="AnimatedSprite" parent="CanvasLayer/Control"]
-position = Vector2( -234, 40 )
+position = Vector2( -195, 60 )
 rotation = 3.14159
 scale = Vector2( 2, 2 )
 frames = SubResource( 1 )
-animation = "shoot"
+animation = "idle"
 frame = 3
 playing = true
 centered = false
@@ -50,30 +50,37 @@ flip_v = true
 [node name="GunRays" type="Spatial" parent="."]
 
 [node name="RayCast" type="RayCast" parent="GunRays"]
+transform = Transform( 1, 0, 0, 0, 0.997801, -0.0662739, 0, 0.0662739, 0.997801, 0, 0, 0 )
 enabled = true
 cast_to = Vector3( 0, 0, -20 )
 
 [node name="RayCast2" type="RayCast" parent="GunRays"]
+transform = Transform( 1, 0, 0, 0, 0.997564, 0.0697565, 0, -0.0697565, 0.997564, 0, 0, 0 )
 enabled = true
 cast_to = Vector3( 0, 0, -10 )
 
 [node name="RayCast3" type="RayCast" parent="GunRays"]
+transform = Transform( 0.993572, 0, 0.113203, 0, 1, 0, -0.113203, 0, 0.993572, 0, 0, 0 )
 enabled = true
 cast_to = Vector3( 0, 0, -15 )
 
 [node name="RayCast4" type="RayCast" parent="GunRays"]
+transform = Transform( 0.994703, 0, -0.102793, 0, 1, 0, 0.102793, 0, 0.994703, 0, 0, 0 )
 enabled = true
 cast_to = Vector3( 0, 0, -10 )
 
 [node name="RayCast5" type="RayCast" parent="GunRays"]
+transform = Transform( 0.998342, 0.00210936, -0.0575254, 0, 0.999328, 0.0366437, 0.057564, -0.0365829, 0.997671, 0, 0, 0 )
 enabled = true
 cast_to = Vector3( 0, 0, -20 )
 
 [node name="RayCast6" type="RayCast" parent="GunRays"]
+transform = Transform( 0.993572, 0.00552995, 0.113068, 0, 0.998806, -0.0488498, -0.113203, 0.0485358, 0.992386, 0, 0, 0 )
 enabled = true
 cast_to = Vector3( 0, 0, -10 )
 
 [node name="RayCast7" type="RayCast" parent="GunRays"]
+transform = Transform( 0.997801, -0.00681246, -0.0659228, 0, 0.994703, -0.102793, 0.0662739, 0.102567, 0.992516, 0, 0, 0 )
 enabled = true
 cast_to = Vector3( 0, 0, -15 )
 

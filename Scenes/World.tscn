@@ -8,10 +8,8 @@
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.05313, 0 )
-visible = false
 
 [node name="EnemyBasicGhoul" parent="." instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.59576, -11.3454 )
-visible = false
 
 [node name="TestLevel" parent="." instance=ExtResource( 2 )]
