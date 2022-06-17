@@ -41,6 +41,7 @@ rotation = 3.14159
 scale = Vector2( -2, 2 )
 frames = SubResource( 1 )
 animation = "idle"
+frame = 2
 playing = true
 centered = false
 flip_v = true
