@@ -51,8 +51,9 @@ position = Vector2( -806, 107 )
 rotation = 3.14159
 scale = Vector2( -2, 2 )
 frames = SubResource( 1 )
-animation = "idle"
-frame = 3
+animation = "shoot"
+frame = 14
+playing = true
 centered = false
 flip_v = true
 

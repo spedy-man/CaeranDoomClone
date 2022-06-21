@@ -7,6 +7,7 @@ onready var blood = preload("res://Scenes/Blood.tscn")
 
 var can_shoot = true
 var damage = 8
+export var rapid_fire = false
 
 
 func _ready():

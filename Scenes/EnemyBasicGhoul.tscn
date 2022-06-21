@@ -27,6 +27,11 @@ animations = [ {
 "name": "idle",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 1 ), ExtResource( 15 ), ExtResource( 13 ) ],
+"loop": true,
+"name": "attack",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 6 ), ExtResource( 12 ), ExtResource( 10 ), ExtResource( 14 ), ExtResource( 3 ), ExtResource( 2 ), ExtResource( 4 ), ExtResource( 5 ) ],
 "loop": false,
 "name": "die",
@@ -35,11 +40,6 @@ animations = [ {
 "frames": [ ExtResource( 8 ), ExtResource( 8 ) ],
 "loop": true,
 "name": "hit",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 1 ), ExtResource( 15 ), ExtResource( 13 ) ],
-"loop": true,
-"name": "attack",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 7 ), ExtResource( 9 ) ],
@@ -56,14 +56,17 @@ transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0
 shape = SubResource( 1 )
 
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
-transform = Transform( 3.5, 0, 0, 0, 3.5, 0, 0, 0, 3.5, -0.134225, -0.943482, 0 )
-centered = false
-offset = Vector2( -20.7, 0 )
+transform = Transform( 3, 0, 0, 0, 3, 0, 0, 0, 3, -0.0203969, 0.0433041, 0 )
 billboard = 2
+double_sided = false
 frames = SubResource( 2 )
-animation = "die"
+animation = "walking"
 frame = 1
+playing = true
 
 [node name="RayCast" type="RayCast" parent="."]
 
 [node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

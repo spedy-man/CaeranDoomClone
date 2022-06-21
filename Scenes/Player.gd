@@ -9,8 +9,9 @@ var mouse_senstivity = 0.002
 #gun variables
 onready var pistol = preload("res://Scenes/Pistol.tscn")
 onready var shotgun = preload("res://Scenes/Shotgun.tscn")
+onready var rapid = preload("res://Scenes/Rapid.tscn")
 var current_gun = 0
-onready var carried_guns = [pistol,shotgun]
+onready var carried_guns = [pistol,shotgun,rapid]
 
 #functions
 func _ready():
@@ -53,10 +54,10 @@ func _process(delta):
 		current_gun+=1
 		if current_gun > len(carried_guns)-1:
 			current_gun = 0
-			change_gun(current_gun)
+		change_gun(current_gun)
 
 	if Input.is_action_just_pressed("prev_gun"):
 		current_gun -= 1
 		if current_gun < 0:
 			current_gun = len(carried_guns)-1
-			change_gun(current_gun)
+		change_gun(current_gun)
