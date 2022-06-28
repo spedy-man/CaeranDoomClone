@@ -13,7 +13,7 @@ animations = [ {
 "name": "idle",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ],
+"frames": [ ExtResource( 4 ), ExtResource( 3 ), ExtResource( 2 ) ],
 "loop": true,
 "name": "shoot",
 "speed": 5.0
@@ -33,7 +33,7 @@ margin_left = -40.0
 margin_top = -40.0
 
 [node name="GunSprite" type="AnimatedSprite" parent="CanvasLayer/Control"]
-position = Vector2( -692, 43 )
+position = Vector2( -510, 77 )
 rotation = 3.14159
 scale = Vector2( -2, 2 )
 frames = SubResource( 1 )
