@@ -17,9 +17,19 @@ animations = [ {
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 7 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ],
-"loop": true,
+"loop": false,
 "name": "shoot",
 "speed": 12.0
+}, {
+"frames": [ ExtResource( 5 ) ],
+"loop": true,
+"name": "shooting",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ), ExtResource( 3 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "cooldown",
+"speed": 5.0
 } ]
 
 [node name="Pistol" type="Spatial"]
@@ -40,7 +50,7 @@ position = Vector2( -692, 43 )
 rotation = 3.14159
 scale = Vector2( -2, 2 )
 frames = SubResource( 1 )
-animation = "idle"
+animation = "cooldown"
 frame = 2
 playing = true
 centered = false
@@ -51,3 +61,8 @@ flip_v = true
 [node name="RayCast" type="RayCast" parent="GunRays"]
 enabled = true
 cast_to = Vector3( 0, 0, -20 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.25
+one_shot = true
+autostart = true

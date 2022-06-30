@@ -30,11 +30,11 @@ func _physics_process(delta):
 		else:
 			if move:
 				$AnimatedSprite3D.play("walking")
-				print("moving")
+				#print("moving")
 				move_and_slide(direction.normalized() * speed, Vector3.UP)
 
 func find_path(target):
-	print("getting path")
+	#print("getting path")
 	path = nav.get_simple_path(global_transform.origin,target)
 	path_index = 0
 

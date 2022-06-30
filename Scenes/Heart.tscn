@@ -14,7 +14,7 @@ animations = [ {
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 4 ), ExtResource( 3 ), ExtResource( 2 ) ],
-"loop": true,
+"loop": false,
 "name": "shoot",
 "speed": 5.0
 } ]
@@ -38,7 +38,7 @@ rotation = 3.14159
 scale = Vector2( -2, 2 )
 frames = SubResource( 1 )
 animation = "idle"
-frame = 2
+frame = 1
 playing = true
 centered = false
 flip_v = true

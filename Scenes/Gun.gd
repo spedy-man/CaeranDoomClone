@@ -7,6 +7,7 @@ onready var blood = preload("res://Scenes/Blood.tscn")
 
 var can_shoot = true
 var damage = 8
+var repeat = false
 export var rapid_fire = false
 
 
@@ -28,19 +29,31 @@ func make_flash():
 	add_child(f)
 
 func _process(delta):
-	if Input.is_action_pressed("shoot") and can_shoot:
+	if Input.is_action_pressed("shoot") and can_shoot and repeat == false:
 		gun_sprite.play("shoot")
+		yield (gun_sprite,"animation_finished")
+		repeat = true
+	if Input.is_action_pressed("shoot") and can_shoot and repeat:
+		gun_sprite.play("shooting")
 		make_flash()
 		check_hit()
 		can_shoot = false
-		
+		$Timer.start()
+		#yield (gun_sprite,"animation_finished")
+		#can_shoot = true
+	if Input.is_action_just_released("shoot"):
+		can_shoot = false
+
 		yield (gun_sprite,"animation_finished")
-		
-		can_shoot = true
 		gun_sprite.play("idle")
-
-
-
+		repeat = false
+		can_shoot = true
 
 func _on_Timer_timeout():
+	print("bafasds")
 	can_shoot = true
+
+
+func _on_Timer_ready():
+	print("ggfds")
+	pass # Replace with function body.
