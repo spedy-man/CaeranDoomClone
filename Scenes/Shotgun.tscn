@@ -1,12 +1,12 @@
 [gd_scene load_steps=9 format=2]
 
+[ext_resource path="res://Scenes/Shotgun.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/Shotgun/fir1h0.png" type="Texture" id=2]
 [ext_resource path="res://Sprites/Shotgun/fir1j0.png" type="Texture" id=3]
 [ext_resource path="res://Sprites/Shotgun/fir1k0.png" type="Texture" id=4]
 [ext_resource path="res://Sprites/Shotgun/fir1l0.png" type="Texture" id=5]
 [ext_resource path="res://Sprites/Shotgun/fir1m0.png" type="Texture" id=6]
 [ext_resource path="res://Sprites/Shotgun/fir1i0.png" type="Texture" id=7]
-[ext_resource path="res://Scenes/Gun.gd" type="Script" id=8]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -32,7 +32,7 @@ animations = [ {
 } ]
 
 [node name="Shotgun" type="Spatial"]
-script = ExtResource( 8 )
+script = ExtResource( 1 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
