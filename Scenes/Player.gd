@@ -31,7 +31,7 @@ func get_input():
 	#input_dir  = input_dir.normalized(), this command cancels strafing
 	return input_dir
 
-func _unhandled_input(event):
+func _input(event):
 	if event is InputEventMouseMotion:
 		rotate_y(-event.relative.x * mouse_senstivity)
 		$Pivot.rotate_x(-event.relative.y * mouse_senstivity)

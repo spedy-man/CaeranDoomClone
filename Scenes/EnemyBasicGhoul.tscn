@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://Sprites/Ghoul/SPRITES/ghule1r1.png" type="Texture" id=1]
 [ext_resource path="res://Sprites/Ghoul/SPRITES/ghuln0.png" type="Texture" id=2]
@@ -32,9 +32,9 @@ animations = [ {
 "name": "attack",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 8 ), ExtResource( 8 ) ],
+"frames": [ ExtResource( 7 ), ExtResource( 9 ) ],
 "loop": true,
-"name": "hit",
+"name": "walking",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 6 ), ExtResource( 12 ), ExtResource( 10 ), ExtResource( 14 ), ExtResource( 3 ), ExtResource( 2 ), ExtResource( 4 ), ExtResource( 5 ) ],
@@ -42,11 +42,14 @@ animations = [ {
 "name": "die",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 7 ), ExtResource( 9 ) ],
+"frames": [ ExtResource( 8 ), ExtResource( 8 ) ],
 "loop": true,
-"name": "walking",
+"name": "hit",
 "speed": 5.0
 } ]
+
+[sub_resource type="CylinderShape" id=3]
+radius = 10.0223
 
 [node name="EnemyBasicGhoul" type="KinematicBody" groups=["Enemy"]]
 script = ExtResource( 16 )
@@ -64,9 +67,18 @@ animation = "walking"
 frame = 1
 playing = true
 
-[node name="RayCast" type="RayCast" parent="."]
+[node name="Visual" type="RayCast" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0273556, 0 )
+enabled = true
+cast_to = Vector3( 0, 0, -20 )
 
 [node name="Timer" type="Timer" parent="."]
 autostart = true
 
+[node name="Aural" type="Area" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="Aural"]
+shape = SubResource( 3 )
+
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="body_entered" from="Aural" to="." method="_on_Aural_body_entered"]
