@@ -22,19 +22,9 @@ radius = 0.5
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ ExtResource( 11 ) ],
-"loop": true,
-"name": "idle",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 1 ), ExtResource( 15 ), ExtResource( 13 ), ExtResource( 15 ) ],
 "loop": true,
 "name": "attack",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 7 ), ExtResource( 9 ) ],
-"loop": true,
-"name": "walking",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 6 ), ExtResource( 12 ), ExtResource( 10 ), ExtResource( 14 ), ExtResource( 3 ), ExtResource( 2 ), ExtResource( 4 ), ExtResource( 5 ) ],
@@ -46,6 +36,21 @@ animations = [ {
 "loop": true,
 "name": "hit",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 11 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 13 ), ExtResource( 1 ), ExtResource( 13 ) ],
+"loop": true,
+"name": "shoot",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "walking",
+"speed": 5.0
 } ]
 
 [sub_resource type="CylinderShape" id=3]
@@ -56,6 +61,7 @@ script = ExtResource( 16 )
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0 )
+visible = false
 shape = SubResource( 1 )
 
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
@@ -63,12 +69,12 @@ transform = Transform( 3, 0, 0, 0, 3, 0, 0, 0, 3, -0.0203969, 0.0433041, 0 )
 billboard = 2
 double_sided = false
 frames = SubResource( 2 )
-animation = "walking"
-frame = 1
+animation = "shoot"
 playing = true
 
 [node name="Visual" type="RayCast" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0273556, 0 )
+visible = false
 enabled = true
 cast_to = Vector3( 0, 0, -20 )
 
@@ -80,5 +86,10 @@ autostart = true
 [node name="CollisionShape" type="CollisionShape" parent="Aural"]
 shape = SubResource( 3 )
 
+[node name="ShootTimer" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true
+
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 [connection signal="body_entered" from="Aural" to="." method="_on_Aural_body_entered"]
+[connection signal="timeout" from="ShootTimer" to="." method="_on_ShootTimer_timeout"]

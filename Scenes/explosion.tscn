@@ -15,15 +15,15 @@
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ ExtResource( 21 ), ExtResource( 8 ) ],
-"loop": true,
-"name": "projectile",
-"speed": 10.0
-}, {
 "frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 1 ), ExtResource( 2 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ) ],
 "loop": true,
 "name": "explode",
 "speed": 15.0
+}, {
+"frames": [ ExtResource( 21 ), ExtResource( 8 ) ],
+"loop": true,
+"name": "projectile",
+"speed": 10.0
 } ]
 
 [sub_resource type="SphereShape" id=3]
@@ -40,6 +40,7 @@ transform = Transform( 3, 0, 0, 0, 3, 0, 0, 0, 2, 0, 0, 0 )
 billboard = 2
 frames = SubResource( 2 )
 animation = "projectile"
+frame = 1
 playing = true
 
 [node name="SplashDamage" type="Area" parent="."]

@@ -13,6 +13,18 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.05313, 0 )
 [node name="EnemyBasicGhoul" parent="." instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.59576, -11.3454 )
 
+[node name="EnemyBasicGhoul2" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25.8788, 2.59576, -12.0001 )
+
+[node name="EnemyBasicGhoul3" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -21.6208, 2.59576, -11.342 )
+
+[node name="EnemyBasicGhoul5" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -21.6208, 2.59576, -9.43369 )
+
+[node name="EnemyBasicGhoul4" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14.3278, 2.59576, 22.7586 )
+
 [node name="TestLevel" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.309988, -0.256394, 3.99886 )
 
