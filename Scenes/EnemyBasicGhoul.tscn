@@ -70,6 +70,7 @@ billboard = 2
 double_sided = false
 frames = SubResource( 2 )
 animation = "shoot"
+frame = 2
 playing = true
 
 [node name="Visual" type="RayCast" parent="."]

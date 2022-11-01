@@ -2,29 +2,31 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/drstar03.png-5813d3748741b2cb16239e0863a9e9d4.stex"
+path.s3tc="res://.import/drstar03.png-5813d3748741b2cb16239e0863a9e9d4.s3tc.stex"
+path.etc2="res://.import/drstar03.png-5813d3748741b2cb16239e0863a9e9d4.etc2.stex"
 metadata={
-"vram_texture": false
+"imported_formats": [ "s3tc", "etc2" ],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://Maps/textures/gothic_flats/drstar03.png"
-dest_files=[ "res://.import/drstar03.png-5813d3748741b2cb16239e0863a9e9d4.stex" ]
+dest_files=[ "res://.import/drstar03.png-5813d3748741b2cb16239e0863a9e9d4.s3tc.stex", "res://.import/drstar03.png-5813d3748741b2cb16239e0863a9e9d4.etc2.stex" ]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
-flags/repeat=0
-flags/filter=false
-flags/mipmaps=false
+flags/repeat=1
+flags/filter=true
+flags/mipmaps=true
 flags/anisotropic=false
 flags/srgb=2
-process/fix_alpha_border=true
+process/fix_alpha_border=false
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false

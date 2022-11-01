@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Scenes/TestLevel.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Level1.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/EnemyBasicGhoul.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/HUD.tscn" type="PackedScene" id=4]
 
@@ -10,22 +10,216 @@
 [node name="Player" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.05313, 0 )
 
+[node name="HUD" parent="." instance=ExtResource( 4 )]
+
+[node name="Level1" parent="." instance=ExtResource( 2 )]
+
 [node name="EnemyBasicGhoul" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.59576, -11.3454 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -104.741, 2.11782, 30.4785 )
+
+[node name="EnemyBasicGhoul22" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -106.741, 2.11782, 30.4785 )
+
+[node name="EnemyBasicGhoul23" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -109.087, 2.11782, 30.4785 )
+
+[node name="EnemyBasicGhoul24" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -111.087, 2.11782, 30.4785 )
+
+[node name="EnemyBasicGhoul29" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -113.516, 2.11782, 30.4785 )
+
+[node name="EnemyBasicGhoul30" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -113.516, 2.11782, 32.118 )
+
+[node name="EnemyBasicGhoul31" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -113.516, 2.11782, 34.0378 )
+
+[node name="EnemyBasicGhoul32" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -113.516, 2.11782, 36.0236 )
+
+[node name="EnemyBasicGhoul33" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -113.516, 2.11782, 37.7995 )
+
+[node name="EnemyBasicGhoul34" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -113.516, 2.11782, 39.5846 )
+
+[node name="EnemyBasicGhoul35" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -113.516, 2.11782, 40.9945 )
+
+[node name="EnemyBasicGhoul36" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -23.871, 2.11782, 28.0117 )
+
+[node name="EnemyBasicGhoul37" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -20.8626, 2.11782, 28.0117 )
+
+[node name="EnemyBasicGhoul38" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -18.6325, 2.11782, 28.0117 )
+
+[node name="EnemyBasicGhoul39" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16.9158, 2.11782, 28.0117 )
+
+[node name="EnemyBasicGhoul40" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16.9158, 2.11782, 32.4692 )
+
+[node name="EnemyBasicGhoul41" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -18.7294, 2.11782, 31.0597 )
+
+[node name="EnemyBasicGhoul42" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -20.5049, 2.11782, 30.3133 )
+
+[node name="EnemyBasicGhoul43" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -22.2235, 2.11782, 29.2945 )
+
+[node name="EnemyBasicGhoul44" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.9506, 2.11782, 29.9628 )
+
+[node name="EnemyBasicGhoul45" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.7776, 2.11782, 29.9628 )
+
+[node name="EnemyBasicGhoul46" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7595, 2.11782, 31.1991 )
+
+[node name="EnemyBasicGhoul47" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 49.881, -3.88147, 25.4099 )
+
+[node name="EnemyBasicGhoul48" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 49.881, -3.88147, 27.0451 )
+
+[node name="EnemyBasicGhoul49" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 49.881, -3.88147, 28.5272 )
+
+[node name="EnemyBasicGhoul50" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 49.881, -3.88147, 30.5272 )
+
+[node name="EnemyBasicGhoul51" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 49.881, -3.88147, 31.8641 )
+
+[node name="EnemyBasicGhoul52" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 49.881, -3.88147, 33.4225 )
+
+[node name="EnemyBasicGhoul53" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 140.803, -3.88147, 29.8436 )
+
+[node name="EnemyBasicGhoul54" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 138.897, -3.88147, 28.8049 )
+
+[node name="EnemyBasicGhoul55" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 138.897, -3.88147, 31.2675 )
+
+[node name="EnemyBasicGhoul56" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 137.49, -3.88147, 31.7722 )
+
+[node name="EnemyBasicGhoul57" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 137.49, -3.88147, 27.5514 )
+
+[node name="EnemyBasicGhoul58" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 135.098, -3.88147, 27.1413 )
+
+[node name="EnemyBasicGhoul59" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 135.098, -3.88147, 32.5863 )
+
+[node name="EnemyBasicGhoul60" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 132.728, -3.88147, 33.6679 )
+
+[node name="EnemyBasicGhoul61" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 132.728, -3.88147, 25.7176 )
+
+[node name="EnemyBasicGhoul62" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 130.665, -3.88147, 25.0953 )
+
+[node name="EnemyBasicGhoul63" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 130.665, -3.88147, 34.7041 )
+
+[node name="EnemyBasicGhoul64" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 128.563, -3.88147, 35.713 )
+
+[node name="EnemyBasicGhoul65" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 128.563, -3.88147, 24.2288 )
+
+[node name="EnemyBasicGhoul66" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 125.952, -3.88147, 22.9689 )
+
+[node name="EnemyBasicGhoul67" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 125.952, -3.88147, 36.4132 )
+
+[node name="EnemyBasicGhoul68" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 88.8996, -3.88147, 67.3543 )
+
+[node name="EnemyBasicGhoul69" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 90.9243, -3.88147, 67.3543 )
+
+[node name="EnemyBasicGhoul25" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -104.741, 2.11782, 40.871 )
+
+[node name="EnemyBasicGhoul26" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -106.741, 2.11782, 40.871 )
+
+[node name="EnemyBasicGhoul27" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -109.087, 2.11782, 40.871 )
+
+[node name="EnemyBasicGhoul28" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -111.087, 2.11782, 40.871 )
 
 [node name="EnemyBasicGhoul2" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25.8788, 2.59576, -12.0001 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.794, 2.11782, -49.9718 )
 
 [node name="EnemyBasicGhoul3" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -21.6208, 2.59576, -11.342 )
-
-[node name="EnemyBasicGhoul5" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -21.6208, 2.59576, -9.43369 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.2793, 2.11782, -49.9718 )
 
 [node name="EnemyBasicGhoul4" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14.3278, 2.59576, 22.7586 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.7317, 2.11782, -49.9718 )
 
-[node name="TestLevel" parent="." instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.309988, -0.256394, 3.99886 )
+[node name="EnemyBasicGhoul5" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.5985, 2.11782, -49.9718 )
 
-[node name="HUD" parent="." instance=ExtResource( 4 )]
+[node name="EnemyBasicGhoul6" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -33.9202, 2.11782, -50.2262 )
+
+[node name="EnemyBasicGhoul7" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -32.0133, 2.11782, -50.2262 )
+
+[node name="EnemyBasicGhoul8" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -72.1359, 2.11782, -40.6278 )
+
+[node name="EnemyBasicGhoul9" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -72.1359, 2.11782, -43.6347 )
+
+[node name="EnemyBasicGhoul10" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -66.771, 2.11782, -40.6278 )
+
+[node name="EnemyBasicGhoul11" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -66.771, 2.11782, -43.6347 )
+
+[node name="EnemyBasicGhoul12" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -61.771, 2.11782, -40.6278 )
+
+[node name="EnemyBasicGhoul13" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -61.771, 2.11782, -43.6347 )
+
+[node name="EnemyBasicGhoul14" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -56.6599, 2.11782, -40.6278 )
+
+[node name="EnemyBasicGhoul15" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -56.6599, 2.11782, -43.6347 )
+
+[node name="EnemyBasicGhoul16" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -51.4135, 2.11782, -40.6278 )
+
+[node name="EnemyBasicGhoul17" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -51.4135, 2.11782, -43.6347 )
+
+[node name="EnemyBasicGhoul18" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -47.6174, 2.11782, -40.6278 )
+
+[node name="EnemyBasicGhoul19" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -47.6174, 2.11782, -43.6347 )
+
+[node name="EnemyBasicGhoul20" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -44.1632, 2.11782, -40.6278 )
+
+[node name="EnemyBasicGhoul21" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -44.1632, 2.11782, -43.6347 )
+
+[node name="EnemyBasicGhoul70" parent="." instance=ExtResource( 3 )]
+transform = Transform( 2.5, 0, 0, 0, 2, 0, 0, 0, 1, -133.089, 3.09314, -41.6901 )

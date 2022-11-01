@@ -43,6 +43,8 @@ func _physics_process(delta):
 	var desired_velocity = get_input() * max_speed
 	velocity.x = desired_velocity.x
 	velocity.z = desired_velocity.z
+	if Input.is_action_just_pressed("jump"):
+		velocity.y = 10
 	velocity = move_and_slide(velocity, Vector3.UP, true)
 
 func change_gun(gun):
@@ -57,9 +59,13 @@ func _process(delta):
 		if current_gun > len(carried_guns)-1:
 			current_gun = 0
 		change_gun(current_gun)
-
-	if Input.is_action_just_pressed("prev_gun"):
+	elif Input.is_action_just_pressed("prev_gun"):
 		current_gun -= 1
 		if current_gun < 0:
 			current_gun = len(carried_guns)-1
 		change_gun(current_gun)
+	elif Input.is_action_just_pressed("use"):
+		if $InteractCast.is_colliding():
+			if $InteractCast.get_collider().is_in_group("Door"):
+				$InteractCast.get_collider().get_node("AnimationPlayer").play("OpenDoor")
+				print("Door Open")

@@ -42,3 +42,7 @@ anchor_bottom = 0.5
 [node name="Sprite" type="Sprite" parent="CanvasLayer/CenterContainer"]
 scale = Vector2( 2.5, 2.5 )
 texture = ExtResource( 3 )
+
+[node name="InteractCast" type="RayCast" parent="."]
+enabled = true
+cast_to = Vector3( 0, 0, -4 )

@@ -2,29 +2,31 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/drobsd02.png-16d66fe6bdca50c78a5d9d59d8c23b65.stex"
+path.s3tc="res://.import/drobsd02.png-16d66fe6bdca50c78a5d9d59d8c23b65.s3tc.stex"
+path.etc2="res://.import/drobsd02.png-16d66fe6bdca50c78a5d9d59d8c23b65.etc2.stex"
 metadata={
-"vram_texture": false
+"imported_formats": [ "s3tc", "etc2" ],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://Maps/textures/gothic_flats/drobsd02.png"
-dest_files=[ "res://.import/drobsd02.png-16d66fe6bdca50c78a5d9d59d8c23b65.stex" ]
+dest_files=[ "res://.import/drobsd02.png-16d66fe6bdca50c78a5d9d59d8c23b65.s3tc.stex", "res://.import/drobsd02.png-16d66fe6bdca50c78a5d9d59d8c23b65.etc2.stex" ]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
-flags/repeat=0
-flags/filter=false
-flags/mipmaps=false
+flags/repeat=1
+flags/filter=true
+flags/mipmaps=true
 flags/anisotropic=false
 flags/srgb=2
-process/fix_alpha_border=true
+process/fix_alpha_border=false
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false

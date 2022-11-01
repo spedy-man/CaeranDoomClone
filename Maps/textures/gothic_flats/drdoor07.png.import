@@ -2,29 +2,31 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/drdoor07.png-feec2a65b0bc7e1405c49026c17ed77e.stex"
+path.s3tc="res://.import/drdoor07.png-feec2a65b0bc7e1405c49026c17ed77e.s3tc.stex"
+path.etc2="res://.import/drdoor07.png-feec2a65b0bc7e1405c49026c17ed77e.etc2.stex"
 metadata={
-"vram_texture": false
+"imported_formats": [ "s3tc", "etc2" ],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://Maps/textures/gothic_flats/drdoor07.png"
-dest_files=[ "res://.import/drdoor07.png-feec2a65b0bc7e1405c49026c17ed77e.stex" ]
+dest_files=[ "res://.import/drdoor07.png-feec2a65b0bc7e1405c49026c17ed77e.s3tc.stex", "res://.import/drdoor07.png-feec2a65b0bc7e1405c49026c17ed77e.etc2.stex" ]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
-flags/repeat=0
-flags/filter=false
-flags/mipmaps=false
+flags/repeat=1
+flags/filter=true
+flags/mipmaps=true
 flags/anisotropic=false
 flags/srgb=2
-process/fix_alpha_border=true
+process/fix_alpha_border=false
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
